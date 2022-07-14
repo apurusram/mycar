@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Quote from './components/Quote/quote';
 import Suv from './components/Vehicles/suv';
-
+import About from './components/About/about';
 
 
 function HomeScreen() {
@@ -12,6 +12,15 @@ function HomeScreen() {
     <View>
       <Image style={styles.myimage}
       source={require('./assets/home.jpg')} />
+
+    </View>
+  );
+}
+
+function AboutScreen() {
+  return (
+    <View>
+      <About />
 
     </View>
   );
@@ -44,6 +53,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="HOME" component={HomeScreen} />
+        <Tab.Screen name="ABOUT" component={AboutScreen} />
         <Tab.Screen name="VEHICLES" component={VehiclesScreen} />
         <Tab.Screen name="GET QUOTE" component={QuoteScreen} />
       </Tab.Navigator>

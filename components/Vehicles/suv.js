@@ -9,7 +9,8 @@ const Suv = () => {
     return (
 
         <ScrollView style={styles.container}>
-       
+
+           
 
         <Image style={styles.myimage}
         source={require('../../assets/suv1.jpg')} />
@@ -88,7 +89,8 @@ const Suv = () => {
         padding: 10
 
 
-      }
+      },
+     
     
       
     });
