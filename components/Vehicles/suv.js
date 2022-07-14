@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image} from "react-native";
+import { StyleSheet, Text, ScrollView, Image} from "react-native";
 
 
 const Suv = () => {
@@ -8,26 +8,56 @@ const Suv = () => {
 
     return (
 
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
        
 
         <Image style={styles.myimage}
         source={require('../../assets/suv1.jpg')} />
 
         <Text style={styles.suvname}>RVN H7</Text>
+        
         <Text style={styles.features}>
-        - 1.5L Turbo engine {'\n'} 
-        - Dual Clutch 7-Speed {'\n'} 
-        - Secondary Collision Mitigation {'\n'} 
-        - Curve Brake Control {'\n'} 
-        - Roll Movement Intervention {'\n'} 
-        - Hill Descent/Hold Control
+        <Image source={require('../../assets/check.png')} /> 1.5L Turbo engine {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Dual Clutch 7-Speed {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Secondary Collision Mitigation {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Curve Brake Control {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Roll Movement Intervention {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Hill Descent/Hold Control
+        </Text>
+
+        
+        <Image style={styles.myimage}
+        source={require('../../assets/suv2.jpg')} />
+
+        <Text style={styles.suvname}>RVN H7 HEV</Text>
+        <Text style={styles.features}>
+        <Image source={require('../../assets/check.png')} /> 1.5 L Turbo Hybrid {'\n'} 
+        <Image source={require('../../assets/check.png')} /> DHT Transmission {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Adjustable Energy Recovery Level {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Wireless Charger {'\n'} 
+        <Image source={require('../../assets/check.png')} /> 360 Omniview Camera {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Fully Automatic Parking
+        </Text>
+
+        <Image style={styles.myimage}
+        source={require('../../assets/suv3.jpg')} />
+
+        <Text style={styles.suvname}>RVN Magnum</Text>
+        <Text style={styles.features}>
+        <Image source={require('../../assets/check.png')} /> 1.5L Turbo engine {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Automatic Transmission {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Automatic headlamps & wiper {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Paddle shift {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Touch Screen {'\n'} 
+        <Image source={require('../../assets/check.png')} /> Reverse Camera
         </Text>
 
  
 
 
-        </View>
+        </ScrollView>
+
+        
 
         
       
@@ -36,11 +66,13 @@ const Suv = () => {
     
     const styles = StyleSheet.create({
       container: {
-        backgroundColor: 'fff',
+        backgroundColor: '#fff',
+        shadowColor: '#000',
+        
       },
       myimage: {
         height: 250,
-        width: '100%',
+        width: 400,
         
         
       },
@@ -49,6 +81,13 @@ const Suv = () => {
         fontWeight: 'bold',
         fontSize: 20,
         textAlign: 'center',
+      },
+      features: {
+        lineHeight: 30,
+        fontSize: 15,
+        padding: 10
+
+
       }
     
       

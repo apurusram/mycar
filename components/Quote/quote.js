@@ -15,8 +15,9 @@ const Quote = () => {
 
   const [selected, setSelected] = React.useState("");
   const data = [
-    {key:'1',value:'Cash'},
-    {key:'2',value:'Lease'}
+    {key:'1',value:'H7'},
+    {key:'2',value:'H7 HEV'},
+    {key:'3',value:'Magnum'}
   ];
 
 
@@ -45,7 +46,7 @@ const Quote = () => {
         value={number || ''}
         keyboardType="numeric"
       /> 
-    <Text style={styles.label}>Select your payment method*</Text>
+    <Text style={styles.label}>SUV you are interested in*</Text>
     <View style={styles.myselect}>
       <SelectList 
       setSelected={setSelected} 
