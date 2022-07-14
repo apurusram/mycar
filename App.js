@@ -57,8 +57,9 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').height,
   },
   mytext: {
-    padding: 10,
-    margin: 12,
+    marginLeft: 12,
+    paddingBottom: 8,
+    paddingTop: 5,
   },
   
 

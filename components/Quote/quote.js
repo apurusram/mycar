@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, TextInput, Text, View, Pressable, Image} from "react-native";
+import { SafeAreaView, StyleSheet, TextInput, Text, View, Pressable } from "react-native";
 import SelectList from 'react-native-dropdown-select-list';
 
 
@@ -11,7 +11,6 @@ const Quote = () => {
 
   const [text, onChangeText] = React.useState(null);
   const [text1, onChangeText1] = React.useState(null);
-  const [text2, onChangeText2] = React.useState(null);
   const [number, onChangeNumber] = React.useState(null);
 
   const [selected, setSelected] = React.useState("");
@@ -65,10 +64,7 @@ const Quote = () => {
 
         </Pressable>
 
-        <Image style={styles.map}
-      source={require('../../assets/map.png')} />
-
-      
+       
     
 
      
@@ -97,25 +93,19 @@ const styles = StyleSheet.create({
 
   },
   button: {
-    height: 40,
+    height: 35,
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#171A20',
+    marginTop: 120,
 
   },
   btext: {
-    color: 'fff',
+    color: '#ffffff',
     
   },
-  map: {
-    width: 350,
-    height: 350,
-    alignItems: 'center',
-    justifyContent: 'center',
-    
-  }
-
+ 
 
 
 

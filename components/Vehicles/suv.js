@@ -1,6 +1,5 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, TextInput, Text, View, Button, Image} from "react-native";
-
+import { StyleSheet, Text, View, Image} from "react-native";
 
 
 const Suv = () => {
@@ -17,16 +16,20 @@ const Suv = () => {
 
         <Text style={styles.suvname}>RVN H7</Text>
         <Text style={styles.features}>
-        1.5L Turbo engine {'\n'} 
-        Dual Clutch 7-Speed {'\n'} 
-        Secondary Collision Mitigation {'\n'} 
-        Curve Brake Control {'\n'} 
-        Roll Movement Intervention {'\n'} 
-        Hill Descent/Hold Control
+        - 1.5L Turbo engine {'\n'} 
+        - Dual Clutch 7-Speed {'\n'} 
+        - Secondary Collision Mitigation {'\n'} 
+        - Curve Brake Control {'\n'} 
+        - Roll Movement Intervention {'\n'} 
+        - Hill Descent/Hold Control
         </Text>
+
+ 
 
 
         </View>
+
+        
       
       );
     };
@@ -43,7 +46,7 @@ const Suv = () => {
       },
 
       suvname: {
-        fontWeight: 600,
+        fontWeight: 'bold',
         fontSize: 20,
         textAlign: 'center',
       }
