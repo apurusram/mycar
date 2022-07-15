@@ -100,6 +100,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#171A20',
     marginTop: 120,
+    marginRight: 'auto',
+    marginLeft: 'auto',
+    paddingRight: 20,
+    paddingLeft: 20,
 
   },
   btext: {

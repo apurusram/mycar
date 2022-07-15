@@ -10,6 +10,8 @@ const Suv = () => {
 
         <ScrollView style={styles.container}>
 
+        <Text style={styles.heading}>Our Fleet</Text>   
+
            
 
         <Image style={styles.myimage}
@@ -90,6 +92,14 @@ const Suv = () => {
 
 
       },
+      heading: {
+        textTransform: 'uppercase',
+        color: '#007bff',
+        fontSize: 20,
+        paddingLeft: 10,
+        marginTop: 40,
+      }
+
      
     
       
