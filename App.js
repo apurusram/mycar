@@ -7,7 +7,6 @@ import Quote from './components/Quote/quote';
 import Suv from './components/Vehicles/suv';
 import About from './components/About/about';
 
-
 function HomeScreen() {
   return (
     <View>
@@ -41,9 +40,7 @@ function QuoteScreen() {
     <View>
       <Text style={styles.heading}>Get a quote</Text>
       <Text style={styles.mytext}>Visit us at Motorcity Bagatelle, Moka or request a quote below:</Text>
-      <Quote />    
-     
-      
+      <Quote />   
     </View>
   );
 }
@@ -116,6 +113,4 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     marginTop: 40,
   }
-  
-
 });

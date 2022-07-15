@@ -1,19 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, ScrollView, Image} from "react-native";
-
-
 const Suv = () => {
-
-
 
     return (
 
         <ScrollView style={styles.container}>
-
         <Text style={styles.heading}>Our Fleet</Text>   
-
-           
-
         <Image style={styles.myimage}
         source={require('../../assets/suv1.jpg')} />
 
@@ -27,11 +19,9 @@ const Suv = () => {
         <Image source={require('../../assets/check.png')} /> Roll Movement Intervention {'\n'} 
         <Image source={require('../../assets/check.png')} /> Hill Descent/Hold Control
         </Text>
-
-        
+ 
         <Image style={styles.myimage}
         source={require('../../assets/suv2.jpg')} />
-
         <Text style={styles.suvname}>RVN H7 HEV</Text>
         <Text style={styles.features}>
         <Image source={require('../../assets/check.png')} /> 1.5 L Turbo Hybrid {'\n'} 
@@ -55,31 +45,20 @@ const Suv = () => {
         <Image source={require('../../assets/check.png')} /> Reverse Camera
         </Text>
 
- 
-
-
         </ScrollView>
-
-        
-
-        
-      
       );
     };
     
     const styles = StyleSheet.create({
       container: {
         backgroundColor: '#fff',
-        shadowColor: '#000',
-        
+        shadowColor: '#000',        
       },
       myimage: {
-        height: 250,
-        width: 400,
-        
-        
+        height: 186,
+        width: 325,
+        alignSelf: 'center',   
       },
-
       suvname: {
         fontWeight: 'bold',
         fontSize: 20,
@@ -89,8 +68,6 @@ const Suv = () => {
         lineHeight: 30,
         fontSize: 15,
         padding: 10
-
-
       },
       heading: {
         textTransform: 'uppercase',
@@ -100,9 +77,6 @@ const Suv = () => {
         marginTop: 40,
       }
 
-     
-    
-      
     });
 
 
