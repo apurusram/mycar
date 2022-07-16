@@ -5,7 +5,7 @@ const About = () => {
     return (
         <View style={styles.container}>
         <Text style={styles.heading}>About us</Text>
-        <Text style={styles.about}>RVN is a specialist manufacturer of premium SUVs and has been on the market since 10 years.
+        <Text style={styles.about}>RVN is a specialist manufacturer of premium SUVs and has been on the market for 10 years.
         Our success is due to a combination of commitment, passion and listening to our customers.
         We take the best features, safety and technologies from around the world to produce the best SUV we can.{'\n'} {'\n'} 
         Please feel free to browse our SUVs and can check the relevant specs.{'\n'} {'\n'} 
