@@ -15,9 +15,8 @@ const Quote = () => {
       duration: 5000,
     }).start();
   };
-
+  
   fadeIn();
-
 
   const [loading, setLoad] = useState(false);
   const [text, onChangeText] = React.useState(null);
@@ -77,7 +76,7 @@ const Quote = () => {
       ]}
        >
 
-<Pressable 
+      <Pressable 
         style={styles.button}
         content={"Submit"}
         onPress={() => {     
@@ -86,22 +85,11 @@ const Quote = () => {
             setLoad(loading)
             alert("Thank you for your inquiry. We will get back soon.")                        
           }, 3000)
-        }}
-      
+        }}      
         >
-
-
-
-        <Text style={styles.btext}>SUBMIT</Text>
-        </Pressable>
-
-
-      
- 
-    </Animated.View>
-
-      
-
+      <Text style={styles.btext}>SUBMIT</Text>
+      </Pressable>
+    </Animated.View>    
     </SafeAreaView>
     
   );
